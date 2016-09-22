@@ -1,3 +1,20 @@
+<?php
+if (isset($_POST['email'])) {
+//    $to      = 'social.castellersdelpoblesec.com';
+    $to      = 'piliamaurizio@gmail.com';
+    $subject = '[Sense alè]' . $_REQUEST['nom'];
+    $message = 'Ciaoooo' . '\n' .
+                'Nom: ' . $_POST['nom'] . '\n' .
+                'Telefòn: ' . $_POST['telefon'] . '\n' .
+                'Detalls: ' . $_POST['descricion'] . '\n' .
+                'Email: ' . $_POST['email'];
+    $headers = 'From: webmaster@example.com' . "\r\n" .
+        'Reply-To: webmaster@example.com' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+
+    mail($to, $subject, $message, $headers);
+}
+?>
 <!DOCTYPE html>
 <html lang="ca">
 <head>
