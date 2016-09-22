@@ -1,5 +1,7 @@
 <?php
+echo 'start';
 if (isset($_POST['email'])) {
+    echo 'inside';
 //    $to      = 'social.castellersdelpoblesec.com';
     $to      = 'piliamaurizio@gmail.com';
     $subject = '[Sense alè]' . $_REQUEST['nom'];
@@ -12,8 +14,9 @@ if (isset($_POST['email'])) {
         'Reply-To: webmaster@example.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    mail($to, $subject, $message, $headers);
+    echo mail($to, $subject, $message, $headers);
 }
+echo 'end';
 ?>
 <!DOCTYPE html>
 <html lang="ca">
