@@ -10,8 +10,7 @@ if (isset($_POST['email'])) {
                 'Telefòn: ' . $_POST['telefon'] . '\n' .
                 'Detalls: ' . $_POST['descricion'] . '\n' .
                 'Email: ' . $_POST['email'];
-    $headers = 'From: webmaster@example.com' . "\r\n" .
-        'Reply-To: webmaster@example.com' . "\r\n" .
+    $headers = 'From: noreply@senseale.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     echo mail($to, $subject, $message, $headers);
