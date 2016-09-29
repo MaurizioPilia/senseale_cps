@@ -30,7 +30,7 @@ $( document ).ready( function () {
             processData: false,
             contentType: false
         }).done(function( data ) {
-            window.location.href = '../../index.php';
+            window.location.href = '../../index.php?envio=ok';
         });
     } );
 } );
