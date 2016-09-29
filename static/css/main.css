@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.alert {
+    margin-bottom: 0px;
+}
+
 
 body {
     font: 16px Helvetica;
